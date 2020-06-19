@@ -1,0 +1,13 @@
+# 共通のパラメータ
+data_type: mnist      # mnist, fashion_mnist or cifar10
+random_state: 1         # データ分割のときに使用するシード
+# GANのパラメータ
+gan_data_size: 2000     # ganで使用するデータ数、残りのデータはvggで使用
+gan_epoch: 500          # 繰り返し回数
+gan_batch: 32           # バッチサイズ
+# vgg
+vgg_epoch: 50          # 繰り返し回数
+vgg_batch: 512          # バッチサイズ
+vgg_hidden: 256         # vggのtopに加える層の数
+vgg_dropout: 0.5        # dropoutの割合 (小さいモデルでは使わない)
+vgg_validation: 0.2     # validation dataの割合
